@@ -8,6 +8,7 @@ LOCAL_MODULE := libmemtrack
 LOCAL_C_INCLUDES += hardware/libhardware/include
 LOCAL_SHARED_LIBRARIES := libhardware liblog
 LOCAL_CFLAGS := -Wall -Werror
+LOCAL_CFLAGS += -fno-strict-aliasing
 include $(BUILD_SHARED_LIBRARY)
 
 include $(CLEAR_VARS)
