@@ -81,7 +81,6 @@ include $(LOCAL_PATH)/Android.build.mk
 # The libbacktrace_test library needed by backtrace_test.
 #-------------------------------------------------------------------------
 libbacktrace_test_cflags := \
-	-O0 \
 
 libbacktrace_test_src_files := \
 	backtrace_testlib.c \
@@ -100,7 +99,6 @@ include $(LOCAL_PATH)/Android.build.mk
 #-------------------------------------------------------------------------
 backtrace_test_cflags := \
 	-fno-builtin \
-	-O0 \
 	-g \
 
 backtrace_test_cflags_target := \
